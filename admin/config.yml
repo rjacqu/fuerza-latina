@@ -23,13 +23,13 @@ collections:
       - { label: "Country Code (for url)", name: "code" , widget: string}
   - label: "Post"
     name: "post"
-    folder: "{{language}}/_posts"
-    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    folder: "_posts"
+    slug: "{{language}}/{{slug}}"
     create: true
     editor:
       preview: false
     fields:
-      - label: Language
+      - label: Categories
         name: language
         widget: relation
         collection: languages
@@ -39,7 +39,7 @@ collections:
         default: "en"
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - label: "About"
+  - label: "About"rm
     name: "about"
     folder: "_about"
     slug: "{{language}}"
