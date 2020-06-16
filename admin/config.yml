@@ -39,7 +39,7 @@ collections:
         default: "en"
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - label: "About"rm
+  - label: "About"
     name: "about"
     folder: "_about"
     slug: "{{language}}"
