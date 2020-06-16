@@ -1,22 +1,25 @@
-# Multilingual Netlify CMS + Jekyll
+# Fuerza Latina Fort Collins Colorado Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/45aee436-08d0-4bec-9ce2-ac9b5e8542ea/deploy-status)](https://app.netlify.com/sites/youthful-stonebraker-b0e09f/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a05781c-e452-4664-8407-83473d8f8b0a/deploy-status)](https://app.netlify.com/sites/fuerza-latina/deploys)
 
-This is a simple example of an implementation of a multilingual site using [Jekyll](https://jekyllrb.com/) + [netlify-cms](https://www.netlifycms.org/).
+This site functions off the following technologies:
+ [Jekyll](https://jekyllrb.com/)
+ [netlify-cms](https://www.netlifycms.org/).
+ [netlify](https://app.netlify.com/)
 
-![Screenshot from 2020-03-30 23-01-07](https://user-images.githubusercontent.com/2707508/77969017-9bc76c00-72e0-11ea-9bb5-9a67fc2b590e.png)
 
+## How to run Website // CMS locally for development purposes
 
-## How to run locally
+On a server after cloing repo + installing ruby/jekyll run in bash terminal:
+ - `cd fuerza-latina`
+ - `bundle exec jekyll serve --host 0.0.0.0`
+ - You can now access the site: http://0.0.0.0:4000
 
-**Optional:** In a terminal (to run the cms locally):
- - `cd <PROJECT>`
+**Optional:** In another terminal (to run the cms locally):
+ - `cd fuerza-latina`
  - `PORT=8076 npx netlify-cms-proxy-server`
 
-In another terminal:
- - `cd <PROJECT>`
- - `bundle exec jekyll serve`
- - You can now access the site: http://localhost:4000
+
 
 ## How does it works?
 

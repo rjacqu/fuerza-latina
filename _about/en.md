@@ -2,4 +2,6 @@
 language: en
 title: About us
 ---
-This is my about page
+Fuerza Latina was formed in 2002 by immigrant parents of students at a local bilingual immersion school in Northern Colorado. Parents came together, discussing their own experiences and identifying what challenges they shared and how those could be addressed. This parent group began inviting others to join them, researching what organizations required government-issued identification for services, organizing legal trainings and workshops, and educating one another on immigration policies and their effects at the local level.
+
+From there, Fuerza Latina grew and carried out more immigrant-led campaigns such as confronting anti-immigrant activists, educating allies, establishing an area hotline in response to massive workplace raids, fighting school closures and housing abuses, and leading two campaigns to push city officials, including the police, to adopt policies that prevent city employees from inquiring about or discriminating based on a person’s legal status. Additionally we created and produced an Immigrant Resource Packet and have provided workshops for DACA, Know Your Rights, and other issues relevant to our Latinx community in Northern Colorado.
