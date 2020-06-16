@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">{{ site.title }}</a>
+    <a class="navbar-brand js-scroll-trigger" href="/">{{ site.title }}</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,10 +13,8 @@
         {% endfor %}
       </ul>
       <ul class="navbar-nav my-2 my-lg-0">
-        {% for language_hash in site.data.languages %}
-        {% assign language = language_hash[1] %}
-        <li class="nav-item"><a class="{% if page.url == item.link %}current{% endif %} nav-link js-scroll-trigger" href="{% if language.code != 'en' %}/{{ language.code }}{% endif %}/{{ include.currentPage }}">{% if language.code != 'en' %}ES{%else%} EN{%endif%}</a></li>
-        {% endfor %}
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ page.url|remove:'es/' |remove:'.html' }}">EN</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="es{{ page.url|remove:'.html'  }}">ES</a></li>
     </ul>
     </div>
   </div>
