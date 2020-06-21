@@ -24,12 +24,12 @@ collections:
   - label: "Post"
     name: "post"
     folder: "_posts"
-    slug: "{{language}}/{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     create: true
     editor:
       preview: false
     fields:
-      - label: Categories
+      - label: Language
         name: language
         widget: relation
         collection: languages

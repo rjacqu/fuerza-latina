@@ -1,3 +1,66 @@
-.current {
+.donate_icon {
+  color: red; 
+  font-size: 25px; 
+  position: relative;
+  top: 3px;
+  transition: all .3s ease-in-out;
+}
+
+.left-border {
+  border-right: 1px;
+}
+
+.donate_icon:hover {
+  font-size: 35px;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.fuerza-nav {
+	background-color: white;
+  position: fixed;
+}
+
+.list-horizontal {
+	font-size: 17px;
+    font-family: "Lucida Grande";
+    text-transform: uppercase;
+    color: black;
+    line-height: 1;
+    list-style-type: none;
+    position: fixed;
+    width: auto;
+      -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-width: 50%;
+     -moz-column-width: 50%;
+          column-width: 50%;
+    -webkit-column-gap: 4em;
+       -moz-column-gap: 4em;
+            column-gap: 4em;
+}
+
+.lang_li {
+  text-align: center;
+	padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.lang_a {
+  text-decoration: none;
+  color: black;
+}
+.lang_a:hover {
+  text-decoration: none;
   color: red;
+}
+
+.lang_selected {
+  font-weight: 700;
+  border-bottom: 2px solid #fc3a30;
 }
