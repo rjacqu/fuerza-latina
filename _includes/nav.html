@@ -13,9 +13,9 @@
         {% endfor %}
       </ul>
       <ul class="list-horizontal">
-        <li class="lang_li"><a class="lang_a {% if page.url contains "es" %}{% else %}lang_selected{% endif %}" href="{{ page.url|remove:'es/' |remove:'.html' }}">EN</a>/<a class="lang_a {% if page.url contains "es" %}lang_selected{% else %}{% endif %}" href="{% if page.url contains "es" %}{{ page.url|remove:'.html'  }}{% else %} es{{ page.url|remove:'.html'  }}{% endif %}">ES</a></li>
+        <li class="lang_li"><a class="lang_a {% if page.lang == "es" %}{% else %}lang_selected{% endif %}" href="{{ page.url|remove:'es/' |remove:'.html' }}">EN</a>/<a class="lang_a {% if page.lang == "es" %}lang_selected{% else %}{% endif %}" href="{% if page.lang == "es" %}{{ page.url|remove:'.html'  }}{% else %} es{{ page.url|remove:'.html'  }}{% endif %}">ES</a></li>
       </ul>
-        <li class="lang_li full-height left-border">
+        <li class="lang_li full-height">
           <i class="donate_icon qode_icon_font_awesome fa fa-heart"></i>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_donations">

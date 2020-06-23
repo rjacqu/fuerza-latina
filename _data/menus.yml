@@ -12,9 +12,9 @@ header:
 - title: Programs
   title-es: Programas
   url: programs
-- title: Resources
-  title-es: Recursos
-  url: rersources
 - title: Events
   title-es: Eventos
   url: events 
+- title: Resources
+  title-es: Recursos
+  url: resources

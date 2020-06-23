@@ -1,5 +1,0 @@
-{% for about in site.about %}
-  {% if about.language == include.lang %}
-    {{ about.content | markdownify }}
-  {% endif %}
-{% endfor %}

@@ -23,4 +23,8 @@ layout: base
     {% include {{ section.type }} section=section site=site page=page %}
 {% endfor %}
 
-{{ content }}
+<section class="page-section {{ page.background_style }}">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>

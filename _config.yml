@@ -68,9 +68,3 @@ social:
     - https://twitter.com/FCCAN2
 
 css_inline: true
-
-navigation_header:
-  - title: Home
-    url: "{% if include.lang != 'en' %}{{ include.lang }}{% endif %}"
-  - title: about
-    url: /about
