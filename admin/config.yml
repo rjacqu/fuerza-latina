@@ -9,58 +9,47 @@ media_folder: "media"
 public_folder: "/media"
 
 collections:
-  - label: "Languages"
-    name: "languages"
-    folder: "_data/languages"
-    extension: "yml"
-    format: "yml"
-    create: false
-    slug: "{{code}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Language", name: "language" , widget: string}
-      - { label: "Country Code (for url)", name: "code" , widget: string}
-  - label: "Post"
-    name: "post"
-    folder: "_posts"
+  - label: "Events"
+    name: "events"
+    folder: "_events"
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     create: true
     editor:
       preview: false
     fields:
-      - label: Language
-        name: language
-        widget: relation
-        collection: languages
-        searchFields: ["language"]
-        valueField: code
-        displayFields: ["language"]
-        default: "en"
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - label: "About"
-    name: "about"
-    folder: "_about"
-    slug: "{{language}}"
+      - label: "Event Start Time"
+        name: "start"
+        widget: "datetime"
+        default: ""
+        dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+        timeFormat: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        pickerUtc: false
+      - label: "Event End Time"
+        name: "end"
+        widget: "datetime"
+        default: ""
+        dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+        timeFormat: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        pickerUtc: false
+      - { label: "Title (English)", name: "title", widget: "string" }
+      - { label: "Body (English)", name: "body", widget: "markdown" }
+      - { label: "Title (Spanish)", name: "title-es", widget: "string" }
+      - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
+  - label: "Staff Members"
+    name: "our-staff"
+    folder: "_our-staff"
+    slug: "{{name}}"
     create: true
     editor:
       preview: false
     fields:
       - {
-          label: Language,
-          name: language,
-          widget: relation,
-          collection: languages,
-          searchFields: ["language"],
-          valueField: code,
-          displayFields: ["language"],
-          default: "en",
-        }
-      - {
-          label: "Title",
-          name: "title",
+          label: "Name",
+          name: "name",
           widget: "string",
-          default: "About us",
+          default: "",
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "About You (Snglish)", name: "body", widget: "markdown" }
+      - { label: "About You (Spanish)", name: "body", widget: "markdown" }

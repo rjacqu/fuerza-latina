@@ -1,18 +1,30 @@
+#banner {
+     text-align: center;
+     font-size: 18px;
+     border-bottom: 1px;
+     border-bottom-color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    margin-top: 0px;
+}
+
+.nounderline{
+  text-decoration: none;
+}
 .donate_icon {
   color: red; 
   font-size: 25px; 
   position: relative;
   top: 3px;
-  transition: all .3s ease-in-out;
 }
 
 .left-border {
   border-left: 1px solid black;
   border-right: 1px solid black;
-}
-
-.donate_icon:hover {
-  font-size: 35px;
 }
 
 .full-height {
@@ -31,7 +43,7 @@
     color: black;
     line-height: 1;
     list-style-type: none;
-    position: fixed;
+    position: absolute;
     width: auto;
       -webkit-column-count: 2;
      -moz-column-count: 2;

@@ -6,9 +6,16 @@ header:
 - title: About Us
   title-es: Sobre Nosotros
   url: about
-- title: Our Staff
-  title-es: Nuestro Personal
-  url: our-staff
+  sub-menu:
+    - title: Our Staff
+      title-es: Nuestro Personal
+      url: our-staff
+    - title: Our Steering Committee
+      title-es: Nuestro Comité Directivo
+      url: our-steering-committee
+- title: Get Involved
+  title-es: Involucrarse
+  url: get-involved
 - title: Programs
   title-es: Programas
   url: programs
