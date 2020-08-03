@@ -7,6 +7,9 @@ header:
   title-es: Sobre Nosotros
   url: about
   sub-menu:
+    - title: About Fuerza Latina
+      title-es: Sobre Fuerza Latina
+      url: about
     - title: Our Staff
       title-es: Nuestro Personal
       url: our-staff

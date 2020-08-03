@@ -1,3 +1,11 @@
+@media only screen and (max-width: 768px) {
+  .mobile-lang-select {
+    position: absolute !important;
+    bottom: 5%;
+    left: 55%;
+  }
+}
+
 #banner {
      text-align: center;
      font-size: 18px;
@@ -5,12 +13,6 @@
      border-bottom-color: black;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-.dropdown-menu {
-    margin-top: 0px;
-}
 
 .nounderline{
   text-decoration: none;
@@ -75,5 +77,5 @@
 
 .lang_selected {
   font-weight: 700;
-  border-bottom: 2px solid #fc3a30;
+  color: red;
 }

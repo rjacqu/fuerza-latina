@@ -1,5 +1,18 @@
 copyright: 'PROUDLY AN AFFLIATE OF: <a href="http://www.fccan.org" target="_blank" rel="noopener">FFCAN.ORG</a>'
 links:
-  - text: FCCAN.ORG
-    url: 'http://www.fccan.org'
+  - text: linkedin
+    url: 'https://www.linkedin.com/company/fort-collins-community-action-network/'
     new_window: true
+    icon: '<i class="fab fa-linkedin fa-3x"></i>'
+  - text: twitter
+    url: 'https://twitter.com/FCCAN2'
+    new_window: true
+    icon: '<i class="fab fa-twitter-square fa-3x"></i>'
+  - text: instagram
+    url: 'https://www.instagram.com/fccan/'
+    new_window: true
+    icon: '<i class="fab fa-instagram fa-3x"></i>'
+  - text: facebook
+    url: 'https://www.facebook.com/FuerzaFortCollins/'
+    new_window: true
+    icon: '<i class="fab fa-facebook-square fa-3x"></i>'

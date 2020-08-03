@@ -45,11 +45,12 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: "Name",
-          name: "name",
-          widget: "string",
-          default: "",
-        }
-      - { label: "About You (Snglish)", name: "body", widget: "markdown" }
-      - { label: "About You (Spanish)", name: "body", widget: "markdown" }
+      - label: "Picture"
+        name: "picture"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      - { label: "Name", name: "name", widget: "string", default: "", }
+      - { label: "About You (English)", name: "body", widget: "markdown" }
+      - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }
