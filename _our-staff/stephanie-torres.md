@@ -15,11 +15,6 @@ body-es: >-
   indocumentados pagar los costos de matrícula para la universidad igual a
   residentes del estado.
 
-
-
-
-
-
   Stephanie se graduó de la Universidad del Estado de Colorado en Fort Collins con un título en Trabajo Social y una especialidad en Desarrollo Humano y Estudios de Familia en el 2016. Mientras que estuvo en la universidad, Stephanie también descubrió su pasión por otros temas relacionados a la justicia social y quiso hacer más para ayudar a su comunidad. Ella se unió al Centro de Apoyo para Víctimas de Abuso Sexual (Centro de SAVA) en el 2016 después de graduarse y ha desarrollado una pasión por ayudar a victimas del abuso sexual y crear consciencia sobre este tema en la comunidad Latina. Luego ella se unió a Fuerza Latina como una voluntaria en Septiembre del 2017 y está muy emocionada por ser una de las Organizadoras de la Comunidad para la organización y trabajar para empoderar y organizar a la comunidad inmigrante. Cuando Stephanie no está trabajando, le encanta ver películas, leer libros, pintar y bailar.
 ---
 Stephanie was born and raised in Colorado and grew up mostly in Aurora. Both of her parents are immigrants from Mexico and moved to the United States before she was born. Stephanie and her family moved back to Chihuahua, Mexico where her parents are from and she lived there for two years. During that time Stephanie was able to learn more about her family’s culture and customs and work on perfecting her Spanish. She decided to move back to the United States her junior year of high school and pursue higher education in Colorado. During her high school years, Stephanie became involved in issues around immigration and was one of the founders of the ASSET Student Engagement Club at her high school, which worked to help pass the ASSET bill in Colorado to give undocumented students in-state tuition.

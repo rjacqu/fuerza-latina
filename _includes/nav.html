@@ -19,7 +19,7 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ item.url }}">{% if page.lang == "es" %}{{ item.title-es }}{% else %}{{ item.title }}{% endif %}</a>
             <ul class="dropdown-menu">
            {% for subopt in item.sub-menu %}
-                <a href="{{ subopt.url }}" class="nav-link"><li class="dropdown-item nav-link">{% if page.lang == "es" %}{{ subopt.title-es }}{% else %}{{ subopt.title }}{% endif %}</li></a>
+                <a href="{{ subopt.url-sub }}" class="nav-link"><li class="dropdown-item nav-link">{% if page.lang == "es" %}{{ subopt.title-es }}{% else %}{{ subopt.title }}{% endif %}</li></a>
             {% endfor %}
             </ul>
           </li>
@@ -30,7 +30,7 @@
          {% endif %}
         {% endfor %}
       </ul>
-        <li class="lang_li list-horizontal mobile-lang-select"><a class="lang_a nav-item {% if page.lang == "es" %}{% else %}lang_selected{% endif %}" href="{{ page.url|remove:'es/' |remove:'.html' }}">English</a>/<a class="lang_a nav-item {% if page.lang == "es" %}lang_selected{% else %}{% endif %}" href="{% if page.lang == "es" %}{{ page.url|remove:'.html'  }}{% else %} es{{ page.url|remove:'.html'  }}{% endif %}">Español</a></li>
+        <li class="lang_li list-horizontal mobile-lang-select"><a class="lang_a nav-item {% if page.lang == "es" %}{% else %}lang_selected{% endif %}" href="{{ page.url|remove:'es/' |remove:'.html' }}">English</a>/<a class="lang_a nav-item {% if page.lang == "es" %}lang_selected{% else %}{% endif %}" href="{% if page.lang == "es" %}/{{ page.url|remove:'.html'  }}{% else %} /es{{ page.url|remove:'.html'  }}{% endif %}">Español</a></li>
       </div>
         <li class="lang_li full-height">
           <i class="donate_icon qode_icon_font_awesome fa fa-heart"></i>

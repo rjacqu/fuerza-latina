@@ -56,8 +56,9 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  posts:
+  our-staff:
     output: true
+    permalink: /:collection
   about:
     output: false
 
