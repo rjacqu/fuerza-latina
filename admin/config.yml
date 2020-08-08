@@ -40,6 +40,7 @@ collections:
   - label: "Staff Members"
     name: "staff"
     folder: "_staff"
+    slug: "{{name}}"
     create: true
     editor:
       preview: false
@@ -51,6 +52,6 @@ collections:
           config:
             multiple: false
       - { label: "Name", name: "name", widget: "string", default: "", }
-      - { label: "Title", name: "title", widget: "string", default: "", }
-      - { label: "About You (English)", name: "body", widget: "markdown" }
+      - { label: "Title", name: "job-title", widget: "string", default: "", }
+      - { label: "About You (English)", name: "body-en", widget: "markdown" }
       - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }

@@ -7,7 +7,7 @@
         <div class="span8">
             <h3 class="h4 mb-2">{{ member.name }}</h3>
             <b>{{ member.title }}</b>
-            {% if page.lang == "es" %}{{ member.body-es | newline_to_br }}{% else %}{{ member }}{% endif %}
+            {% if page.lang == "es" %}{{ member.body-es | newline_to_br }}{% else %}{{ member | newline_to_br }}{% endif %}
         </div>
         </div>
         <br><br>
