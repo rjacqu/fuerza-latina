@@ -1,15 +1,16 @@
-<section class="page-section {{ section.background_style }}" id="{{ section.section_id }}">
+<section>
   <div class="container">
     <h2 class="text-center mt-0">{{ section.title }}</h2>
-    <div class="justify-content-right">
       {% for member in site.staff %}
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="member-box">
-          <img class="fa fa-4x text-primary" src="{{ member.picture }}">
-          <h3 class="h4 mb-2">{{ member.title }}</h3>
+      <div class="row-fluid member-box">
+        <img class="fa fa-4x" src="{{ member.picture }}">
+        <div class="span8">
+            <h3 class="h4 mb-2">{{ member.name }}</h3>
+            <b>{{ member.title }}</b>
+            {% if page.lang == "es" %}{{ member.body-es | newline_to_br }}{% else %}{{ member }}{% endif %}
         </div>
-          {% if page.lang == "es" %}<p>{{ member.body-es }}</p>{% else %}<p>{{ member }}</p>{% endif %}
-      </div>
+        </div>
+        <br><br>
       {% endfor %}
     </div>
   </div>

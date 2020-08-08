@@ -51,5 +51,6 @@ collections:
           config:
             multiple: false
       - { label: "Name", name: "name", widget: "string", default: "", }
+      - { label: "Title", name: "title", widget: "string", default: "", }
       - { label: "About You (English)", name: "body", widget: "markdown" }
       - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }
