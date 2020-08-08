@@ -25,7 +25,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   dedicated to educating, informaing, organizing & promoting
   change to facilitate an imporved quality of life for immigrants
   in Nothern Colorado.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fueralatinafoco.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: FCCAN2
 
@@ -56,11 +55,9 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  our-staff:
-    output: true
-    permalink: /:collection
-  about:
+  staff:
     output: false
+    permalink: /:collection
 
 
 social:

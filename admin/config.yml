@@ -38,10 +38,9 @@ collections:
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }
       - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
   - label: "Staff Members"
-    name: "our-staff"
-    folder: "_our-staff"
-    slug: "{{name}}"
-    create: true
+    name: "staff"
+    folder: "_staff"
+    create: false
     editor:
       preview: false
     fields:
@@ -50,7 +49,7 @@ collections:
         widget: "image"
         media_library:
           config:
-            multiple: true
+            multiple: false
       - { label: "Name", name: "name", widget: "string", default: "", }
       - { label: "About You (English)", name: "body", widget: "markdown" }
       - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }

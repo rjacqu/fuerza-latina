@@ -8,13 +8,13 @@ header:
   sub-menu:
     - title: About Fuerza Latina
       title-es: Sobre Fuerza Latina
-      url-sub: about
+      url: about
     - title: Our Staff
       title-es: Nuestro Personal
-      url-sub: our-staff
+      url: our-staff
     - title: Our Steering Committee
       title-es: Nuestro Comité Directivo
-      url-sub: our-steering-committee
+      url: our-steering-committee
 - title: Get Involved
   title-es: Involucrarse
   url: get-involved

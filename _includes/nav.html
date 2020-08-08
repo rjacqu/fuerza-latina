@@ -19,7 +19,7 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ item.url }}">{% if page.lang == "es" %}{{ item.title-es }}{% else %}{{ item.title }}{% endif %}</a>
             <ul class="dropdown-menu">
            {% for subopt in item.sub-menu %}
-                <a href="{{ subopt.url-sub }}" class="nav-link"><li class="dropdown-item nav-link">{% if page.lang == "es" %}{{ subopt.title-es }}{% else %}{{ subopt.title }}{% endif %}</li></a>
+                <a href="{{ subopt.url }}" class="nav-link js-scroll-trigger"><li class="dropdown-item nav-link">{% if page.lang == "es" %}{{ subopt.title-es }}{% else %}{{ subopt.title }}{% endif %}</li></a>
             {% endfor %}
             </ul>
           </li>
