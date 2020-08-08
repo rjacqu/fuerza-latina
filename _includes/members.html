@@ -6,8 +6,8 @@
         <img class="fa fa-4x" src="{{ member.picture }}">
         <div class="span8">
             <h3 class="h4 mb-2">{{ member.name }}</h3>
-            <b>{{ member.title }}</b>
-            {% if page.lang == "es" %}{{ member.body-es | newline_to_br }}{% else %}{{ member | newline_to_br }}{% endif %}
+            <b>{{ member.job-title }}</b><br>
+            {% if page.lang == "es" %}{{ member.body-es | newline_to_br }}{% else %}{{ member.body-en | newline_to_br }}{% endif %}
         </div>
         </div>
         <br><br>
