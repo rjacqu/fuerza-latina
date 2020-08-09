@@ -19,7 +19,7 @@ collections:
     fields:
       - { label: "Section Title (English)", name: "title-en", widget: "string" }
       - { label: "Section Text (English)", name: "body-en", widget: "markdown" }
-            - { label: "Section Title (Spanish)", name: "title-es", widget: "string" }
+      - { label: "Section Title (Spanish)", name: "title-es", widget: "string" }
       - { label: "Section Text (Spanish)", name: "body-es", widget: "markdown" }
   - label: "Events"
     name: "events"
