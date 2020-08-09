@@ -9,10 +9,22 @@ media_folder: "media"
 public_folder: "/media"
 
 collections:
+  - label: "Homepage Sections"
+    name: "homepage-sections"
+    folder: "_homepage-sections"
+    slug: "{{title-en}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Section Title (English)", name: "title-en", widget: "string" }
+      - { label: "Section Text (English)", name: "body-en", widget: "markdown" }
+            - { label: "Section Title (Spanish)", name: "title-es", widget: "string" }
+      - { label: "Section Text (Spanish)", name: "body-es", widget: "markdown" }
   - label: "Events"
     name: "events"
     folder: "_events"
-    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    slug: "{{title-en}}"
     create: true
     editor:
       preview: false
@@ -33,8 +45,9 @@ collections:
         timeFormat: "HH:mm" # e.g. 21:07
         format: "LLL"
         pickerUtc: false
-      - { label: "Title (English)", name: "title", widget: "string" }
-      - { label: "Body (English)", name: "body", widget: "markdown" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Title (English)", name: "title-en", widget: "string" }
+      - { label: "Body (English)", name: "body-en", widget: "markdown" }
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }
       - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
   - label: "Staff Members"
@@ -53,5 +66,22 @@ collections:
             multiple: false
       - { label: "Name", name: "name", widget: "string", default: "", }
       - { label: "Title", name: "job-title", widget: "string", default: "", }
+      - { label: "About You (English)", name: "body-en", widget: "markdown" }
+      - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }
+  - label: "Steering Committee"
+    name: "steering-committee"
+    folder: "_steering-committee"
+    slug: "{{name}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Picture"
+        name: "picture"
+        widget: "image"
+        media_library:
+          config:
+            multiple: false
+      - { label: "Name", name: "name", widget: "string", default: "", }
       - { label: "About You (English)", name: "body-en", widget: "markdown" }
       - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }

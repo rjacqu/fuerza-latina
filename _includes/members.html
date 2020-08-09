@@ -1,16 +1,20 @@
 <section>
   <div class="container">
-    <h2 class="text-center mt-0">{{ section.title }}</h2>
       {% for member in site.staff %}
+      <br>
+      <h2 class="text-center mt-0">{{ member.name }}</h2>
+      <h4 class="text-center mt-0">{{ member.job-title }}</h4><br>
       <div class="row-fluid member-box">
-        <img class="fa fa-4x" src="{{ member.picture }}">
-        <div class="span8">
-            <h3 class="h4 mb-2">{{ member.name }}</h3>
-            <b>{{ member.job-title }}</b><br>
-            {% if page.lang == "es" %}{{ member.body-es | newline_to_br }}{% else %}{{ member.body-en | newline_to_br }}{% endif %}
+        <div class="col-md-auto">
+          <img class="fa fa-3x" src="{{ member.picture }}">
         </div>
+        <div class="col-md-auto">
+          <div class="card-body">
+            <p class="card-text"> {% if page.lang == "es" %}{{ member.body-es | newline_to_br }}{% else %}{{ member.body-en | newline_to_br }}{% endif %}</p>
+          </div>
         </div>
-        <br><br>
+      </div>
+      <br><br>
       {% endfor %}
     </div>
   </div>
