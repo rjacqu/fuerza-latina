@@ -1,11 +1,10 @@
 {% for section in site.homepage-sections %}
   <section id="{{ section.section_id }}" class="page-section-smaller {{ section.background_style }}">
     <div class="container">
-      <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ section.title-es | newline_to_br }}{% else %}{{ section.title-en | newline_to_br }}{% endif %}</h2>
-      <hr class="divider my-4">
+      <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ section.title-es }}{% else %}{{ section.title-en| newline_to_br }}{% endif %}</h2>
       <div class="row justify-content-center">
         <div class="mb-4">
-          {% if page.lang == "es" %}{{ section.body-es | newline_to_br | markdownify }}{% else %}{{ section.body-en | newline_to_br | markdownify }}{% endif %}
+          {% if page.lang == "es" %}{{ section.body-es | newline_to_br | markdownify }}{% else %}{{ section.body-en | markdownify }}{% endif %}
         </div>
   </section>
 {% endfor %}

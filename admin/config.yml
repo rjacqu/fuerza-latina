@@ -15,8 +15,10 @@ collections:
     slug: "{{title-en}}"
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
+      - { label: "Section ID", name: "id", widget: "string", default: "give-me-an-id" }
+      - { label: "Section order", name: "order", widget: "number",  default: 50, valueType: "int", min: 1, max: 101 }
       - { label: "Section Title (English)", name: "title-en", widget: "string" }
       - { label: "Section Text (English)", name: "body-en", widget: "markdown" }
       - { label: "Section Title (Spanish)", name: "title-es", widget: "string" }
@@ -45,7 +47,7 @@ collections:
         timeFormat: "HH:mm" # e.g. 21:07
         format: "LLL"
         pickerUtc: false
-      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Location", name: "location", widget: "map" }
       - { label: "Title (English)", name: "title-en", widget: "string" }
       - { label: "Body (English)", name: "body-en", widget: "markdown" }
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }

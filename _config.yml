@@ -55,6 +55,9 @@ plugins:
 #   - vendor/ruby/
 
 collections:
+  homepage-sections:
+    output: false
+    permalink: /:collection
   staff:
     output: false
     permalink: /:collection
