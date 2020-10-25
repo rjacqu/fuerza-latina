@@ -1,9 +1,7 @@
 <section>
   <div class="container">
- 	<br>
       {% for event in site.events %}
     <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ event.title-es | newline_to_br }}{% else %}{{ event.title-en | newline_to_br }}{% endif %}</h2>
-      <br>
     <div class="row-fluid member-box">
         <div class="col-md-auto">
 

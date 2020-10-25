@@ -64,6 +64,12 @@ collections:
   events:
     output: false
     permalink: /:collection
+  programs:
+    output: false
+    permalink: /:collection
+  resources:
+    output: false
+    permalink: /:collection
 
 
 social:

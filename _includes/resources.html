@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+      {% for resource in site.resources %}
+      <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ resource.title-es | newline_to_br }}{% else %}{{ resource.title-en | newline_to_br }}{% endif %}</h2>
+
+      <br>
+      <div class="row-fluid member-box">
+      	{% if resource.picture %}
+        <div class="col-md-auto">
+          <img class="fa fa-3x" src="{{ resource.picture }}">
+        </div>
+       	{% endif %}
+        <div class="col-md-auto">
+          <div class="card-body">
+            <p class="card-text"> {% if page.lang == "es" %}{{ resource.body-es | newline_to_br }}{% else %}{{ resource.body-en | newline_to_br }}{% endif %}</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      {% endfor %}
+    </div>
+  </div>
+</section>
