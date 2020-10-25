@@ -13,6 +13,7 @@ collections:
     name: "homepage-sections"
     folder: "_homepage-sections"
     slug: "{{title-en}}"
+    summary: "{{title-en}}"
     create: true
     editor:
       preview: true
@@ -27,6 +28,7 @@ collections:
     name: "programs"
     folder: "_programs"
     slug: "{{title-en}}"
+    summary: "{{title-en}}"
     create: true
     editor:
       preview: false
@@ -53,6 +55,7 @@ collections:
     name: "resources"
     folder: "_resources"
     slug: "{{title-en}}"
+    summary: "{{title-en}}"
     create: true
     editor:
       preview: false
@@ -79,6 +82,7 @@ collections:
     name: "events"
     folder: "_events"
     slug: "{{title-en}}"
+    summary: "{{title-en}}"
     create: true
     editor:
       preview: false
@@ -115,6 +119,7 @@ collections:
     name: "staff"
     folder: "_staff"
     slug: "{{name}}"
+    summary: "{{name}}"
     create: true
     editor:
       preview: false
@@ -133,6 +138,7 @@ collections:
     name: "steering-committee"
     folder: "_steering-committee"
     slug: "{{name}}"
+    summary: "{{name}}"
     create: true
     editor:
       preview: false
