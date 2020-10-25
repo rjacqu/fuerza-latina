@@ -1,4 +1,20 @@
+.gmap_canvas {
+    overflow:hidden;
+    float: left;
+    background:none!important;
+    height:250px;
+    width:400px;
+    padding-right: 5px;
+}
+
 @media only screen and (max-width: 768px) {
+  .gmap_canvas {
+    overflow:hidden;
+    float: left;
+    background:none!important;
+    height:150px;
+    width:100%;
+}
   .mobile-lang-select {
     position: absolute !important;
     bottom: 5%;

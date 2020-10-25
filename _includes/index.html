@@ -1,5 +1,5 @@
 {% for section in site.homepage-sections %}
-  <section id="{{ section.section_id }}" class="page-section-smaller {{ section.background_style }}">
+  <section id="{{ section.id }}" class="page-section-smaller order-{{ section.order }}">
     <div class="container">
       <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ section.title-es }}{% else %}{{ section.title-en| newline_to_br }}{% endif %}</h2>
       <div class="row justify-content-center">

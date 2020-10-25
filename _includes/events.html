@@ -1,0 +1,25 @@
+<section>
+  <div class="container">
+ 	<br>
+      {% for event in site.events %}
+    <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ event.title-es | newline_to_br }}{% else %}{{ event.title-en | newline_to_br }}{% endif %}</h2>
+      <br>
+    <div class="row-fluid member-box">
+        <div class="col-md-auto">
+
+		<div class="card-body">
+			{% if event.location %}
+			<iframe width="400" height="250" class="gmap_canvas" src="https://maps.google.com/maps?q={{event.location | uri_escape}}&t=&z=13&ie=UTF8&iwloc=&output=embed&language={{page.lang}}" frameborder="0" scrolling="no"></iframe>
+			{% endif %}
+            <p class="card-text"> 
+            <b>Location</b>: {{event.location}}<br>
+			<b>Start Time</b>: {{event.start}}<br>
+			<b>End Time</b>: {{event.end}}<br>
+            {% if page.lang == "es" %}{{ event.body-es | newline_to_br }}{% else %}{{ event.body-en | newline_to_br }}{% endif %}</p>
+          </div>
+      </div>
+    </div>
+      <br><br>
+      {% endfor %}
+    </div>
+</section>

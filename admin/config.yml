@@ -36,7 +36,7 @@ collections:
         widget: "datetime"
         default: ""
         dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
-        timeFormat: "HH:mm" # e.g. 21:07
+        timeFormat: "hh:mm" 
         format: "LLL"
         pickerUtc: false
       - label: "Event End Time"
@@ -44,10 +44,10 @@ collections:
         widget: "datetime"
         default: ""
         dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
-        timeFormat: "HH:mm" # e.g. 21:07
+        timeFormat: "hh:mm"
         format: "LLL"
         pickerUtc: false
-      - { label: "Location", name: "location", widget: "map" }
+      - { label: "Location", name: "location", widget: "string" }
       - { label: "Title (English)", name: "title-en", widget: "string" }
       - { label: "Body (English)", name: "body-en", widget: "markdown" }
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }
