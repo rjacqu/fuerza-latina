@@ -10,6 +10,11 @@
           <img class="fa fa-3x" src="{{ program.picture }}">
         </div>
        	{% endif %}
+        {% if program.files %}
+        {% for file in program.files %}
+          <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+        {% endfor %}
+        {% endif %}
         <div class="col-md-auto">
           <div class="card-body">
             <p class="card-text"> {% if page.lang == "es" %}{{ program.body-es | newline_to_br }}{% else %}{{ program.body-en | newline_to_br }}{% endif %}</p>

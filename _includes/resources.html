@@ -10,9 +10,14 @@
           <img class="fa fa-3x" src="{{ resource.picture }}">
         </div>
        	{% endif %}
+        {% if resource.files %}
+        {% for file in resource.files %}
+          <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+        {% endfor %}
+        {% endif %}
         <div class="col-md-auto">
           <div class="card-body">
-            <p class="card-text"> {% if page.lang == "es" %}{{ resource.body-es | newline_to_br }}{% else %}{{ resource.body-en | newline_to_br }}{% endif %}</p>
+            <p class="card-text"> {% if page.lang == "es" %}{% if resource.body-es %}{{ resource.body-es | newline_to_br }}{% endif %}{% else %}{% if resource.body-en %}{{ resource.body-en | newline_to_br }}{% endif %}{% endif %}</p>
           </div>
         </div>
       </div>
