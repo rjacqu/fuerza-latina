@@ -23,6 +23,54 @@ collections:
       - { label: "Section Text (English)", name: "body-en", widget: "markdown" }
       - { label: "Section Title (Spanish)", name: "title-es", widget: "string" }
       - { label: "Section Text (Spanish)", name: "body-es", widget: "markdown" }
+  - label: "Programs"
+    name: "programs"
+    folder: "_programs"
+    slug: "{{title-en}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Picture"
+        name: "picture"
+        widget: "image"
+        media_library:
+          config:
+            multiple: false
+      - label: "Files"
+        name: "files"
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
+      - { label: "Title (English)", name: "title-en", widget: "string" }
+      - { label: "Body (English)", name: "body-en", widget: "markdown" }
+      - { label: "Title (Spanish)", name: "title-es", widget: "string" }
+      - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
+  - label: "Resources"
+    name: "resources"
+    folder: "_resources"
+    slug: "{{title-en}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Picture"
+        name: "picture"
+        widget: "image"
+        media_library:
+          config:
+            multiple: false
+      - label: "Files"
+        name: "files"
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
+      - { label: "Title (English)", name: "title-en", widget: "string" }
+      - { label: "Body (English)", name: "body-en", widget: "markdown" }
+      - { label: "Title (Spanish)", name: "title-es", widget: "string" }
+      - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
   - label: "Events"
     name: "events"
     folder: "_events"
@@ -47,6 +95,12 @@ collections:
         timeFormat: "hh:mm"
         format: "LLL"
         pickerUtc: false
+      - label: "Picture"
+        name: "picture"
+        widget: "image"
+        media_library:
+          config:
+            multiple: false
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Title (English)", name: "title-en", widget: "string" }
       - { label: "Body (English)", name: "body-en", widget: "markdown" }
