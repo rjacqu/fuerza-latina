@@ -13,7 +13,7 @@ collections:
     name: "homepage-sections"
     folder: "_homepage-sections"
     slug: "{{title-en}}"
-    summary: "{{title-en}}"
+    summary: "{{title-en}} -- {{id}} -- {{order}}"
     create: true
     editor:
       preview: true
@@ -127,6 +127,7 @@ collections:
       - label: "Picture"
         name: "picture"
         widget: "image"
+        required: false
         media_library:
           config:
             multiple: false
@@ -146,6 +147,7 @@ collections:
       - label: "Picture"
         name: "picture"
         widget: "image"
+        required: false
         media_library:
           config:
             multiple: false

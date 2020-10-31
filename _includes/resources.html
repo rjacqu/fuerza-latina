@@ -17,7 +17,7 @@
         {% endif %}
         <div class="col-md-auto">
           <div class="card-body">
-            <p class="card-text"> {% if page.lang == "es" %}{% if resource.body-es %}{{ resource.body-es | newline_to_br }}{% endif %}{% else %}{% if resource.body-en %}{{ resource.body-en | newline_to_br }}{% endif %}{% endif %}</p>
+            <p class="card-text"> {% if page.lang == "es" %}{% if resource.body-es %}{{ resource.body-es | newline_to_br | markdownify }}{% endif %}{% else %}{% if resource.body-en %}{{ resource.body-en | newline_to_br | markdownify }}{% endif %}{% endif %}</p>
           </div>
         </div>
       </div>

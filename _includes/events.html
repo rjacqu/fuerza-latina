@@ -19,7 +19,7 @@
             <b>Location</b>: {{event.location}}<br>
 			<b>Start Time</b>: {{event.start}}<br>
 			<b>End Time</b>: {{event.end}}<br>
-            {% if page.lang == "es" %}{{ event.body-es | newline_to_br }}{% else %}{{ event.body-en | newline_to_br }}{% endif %}</p>
+            {% if page.lang == "es" %}{{ event.body-es | newline_to_br | markdownify }}{% else %}{{ event.body-en | newline_to_br | markdownify }}{% endif %}</p>
           </div>
       </div>
     </div>
