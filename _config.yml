@@ -70,6 +70,9 @@ collections:
   resources:
     output: false
     permalink: /:collection
+  steering-committee:
+    output: false
+    permalink: /:collection
 
 
 social:

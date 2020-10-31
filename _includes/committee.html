@@ -1,15 +1,15 @@
-<section>
+
+      {% for member in site.steering-committee %}
+      <section>
   <div class="container">
-      {% for member in site.staff %}
       <br>
       <h2 class="text-center mt-0">{{ member.name }}</h2>
-      <h4 class="text-center mt-0">{{ member.job-title }}</h4><br>
       <div class="row-fluid member-box">
-        {% if member.picture %}
+      	{% if member.picture %}
         <div class="col-md-auto">
           <img class="fa fa-3x" src="{{ member.picture }}">
         </div>
-        {% endif %}
+       	{% endif %}
         <div class="col-md-auto">
           <div class="card-body">
             <p class="card-text"> {% if page.lang == "es" %}{{ member.body-es | newline_to_br | markdownify }}{% else %}{{ member.body-en | newline_to_br | markdownify }}{% endif %}</p>
@@ -17,7 +17,8 @@
         </div>
       </div>
       <br><br>
-      {% endfor %}
+
     </div>
   </div>
 </section>
+      {% endfor %}

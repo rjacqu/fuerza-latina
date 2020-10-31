@@ -1,3 +1,24 @@
+<section>
+  <div class="container">
+    <h1 class="mt-0">Recent Events</h1>
+     {% for event in site.events limit:2%}
+    <div class="row-fluid event-box">
+        <div class="col-md-auto">
+		<div class="card-body">
+            <p class="card-text"> 
+            <h4 class="text-center mt-2">{% if page.lang == "es" %}{{ event.title-es | newline_to_br }}{% else %}{{ event.title-en | newline_to_br }}{% endif %}</h4><br>
+            <b>Location</b>: {{event.location}}<br>
+			<b>Start Time</b>: {{event.start}}<br>
+			<b>End Time</b>: {{event.end}}<br>
+            {% if page.lang == "es" %}{{ event.body-es | newline_to_br | markdownify | truncatewords: 30 }}{% else %}{{ event.body-en | newline_to_br | markdownify | truncatewords: 30 }}{% endif %}<a href="{{ event.url }}">Read More</a> </p>
+          </div>
+      </div>
+    </div>
+      <br>
+     {% endfor %}
+    </div>
+</section>
+
 {% for section in site.homepage-sections %}
   <section id="{{ section.id }}" class="page-section-smaller order-{{ section.order }}">
     <div class="container">

@@ -1,6 +1,6 @@
 ---
-start: October 1, 2020 1:00 AM
-end: October 3, 2020 3:00 AM
+start: October 1, 2020 1:00 PM
+end: October 3, 2020 3:00 PM
 picture: /media/power-abolition-hj-training.jpg
 location: Zoom
 title-en: Power, Abolition & Healing Justice Virtual Training Series
