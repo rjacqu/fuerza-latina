@@ -18,14 +18,3 @@
      {% endfor %}
     </div>
 </section>
-
-{% for section in site.homepage-sections %}
-  <section id="{{ section.id }}" class="page-section-smaller order-{{ section.order }}">
-    <div class="container">
-      <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ section.title-es }}{% else %}{{ section.title-en| newline_to_br }}{% endif %}</h2>
-      <div class="row justify-content-center">
-        <div class="mb-4">
-          {% if page.lang == "es" %}{{ section.body-es | newline_to_br | markdownify }}{% else %}{{ section.body-en | markdownify }}{% endif %}
-        </div>
-  </section>
-{% endfor %}

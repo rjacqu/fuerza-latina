@@ -67,17 +67,31 @@ collections:
         media_library:
           config:
             multiple: false
-      - label: "Files"
-        name: "files"
+      - label: "Files (English)"
+        name: "files-en"
+        widget: "file"
+        required: false
+        media_library:
+          config:
+            multiple: true
+      - label: "Files (Spanish)"
+        name: "files-es"
+        widget: "file"
+        required: false
+        media_library:
+          config:
+            multiple: true
+      - label: "Files (Additional)"
+        name: "files-etc"
         widget: "file"
         required: false
         media_library:
           config:
             multiple: true
       - { label: "Title (English)", name: "title-en", widget: "string" }
-      - { label: "Body (English)", name: "body-en", widget: "markdown" }
+      - { label: "Body (English)", name: "body-en", widget: "markdown", required: false }
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }
-      - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
+      - { label: "Body (Spanish)", name: "body-es", widget: "markdown", required: false }
   - label: "Events"
     name: "events"
     folder: "_events"

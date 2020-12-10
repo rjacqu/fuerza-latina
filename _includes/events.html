@@ -13,7 +13,7 @@
 		<div class="card-body">
 
 			{% if event.location %}
-      {% if event.location contains "oom" or "video" or "irtual" %}
+      {% if event.location contains "oom" %}
       {% else %}
 			<iframe width="400" height="250" class="gmap_canvas" src="https://maps.google.com/maps?q={{event.location | uri_escape}}&t=&z=13&ie=UTF8&iwloc=&output=embed&language={{page.lang}}" frameborder="0" scrolling="no"></iframe>
 			{% endif %}
