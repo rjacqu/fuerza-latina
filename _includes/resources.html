@@ -10,10 +10,23 @@
           <img class="fa fa-3x" src="{{ resource.picture }}">
         </div>
        	{% endif %}
-        {% if resource.files %}
-        {% for file in resource.files %}
-          <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
-        {% endfor %}
+        {% if page.lang == "es" %}
+          {% if resource.files-es %}
+          {% for file in resource.files-es %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+          {% endfor %}
+          {% endif %}
+        {% else %}
+          {% if resource.files-en %}
+          {% for file in resource.files-en %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+          {% endfor %}
+          {% endif %}   
+        {% endif %}
+        {% if resource.files-etc %}
+          {% for file in resource.files-etc %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+          {% endfor %}
         {% endif %}
         <div class="col-md-auto">
           <div class="card-body">
