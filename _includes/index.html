@@ -1,5 +1,43 @@
 <section>
   <div class="container">
+  	<h1 class="mt-0">Recent Resources</h1>
+     {% for resource in site.resources limit:5%}
+    <div class="row-fluid event-box">
+      <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ resource.title-es | newline_to_br }}{% else %}{{ resource.title-en | newline_to_br }}{% endif %}</h2>
+
+      <br>
+      <div class="row-fluid member-box">
+      	{% if resource.picture %}
+        <div class="col-md-auto">
+          <img class="fa fa-3x" src="{{ resource.picture }}">
+        </div>
+       	{% endif %}
+        {% if page.lang == "es" %}
+          {% if resource.files-es %}
+          {% for file in resource.files-es %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+          {% endfor %}
+          {% endif %}
+        {% else %}
+          {% if resource.files-en %}
+          {% for file in resource.files-en %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+          {% endfor %}
+          {% endif %}   
+        {% endif %}
+        {% if resource.files-etc %}
+          {% for file in resource.files-etc %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+          {% endfor %}
+        {% endif %}
+        <div class="col-md-auto">
+          <div class="card-body">
+            <p class="card-text"> {% if page.lang == "es" %}{% if resource.body-es %}{{ resource.body-es | newline_to_br | markdownify }}{% endif %}{% else %}{% if resource.body-en %}{{ resource.body-en | newline_to_br | markdownify }}{% endif %}{% endif %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+     {% endfor %}
     <h1 class="mt-0">Recent Events</h1>
      {% for event in site.events limit:2%}
     <div class="row-fluid event-box">
@@ -18,3 +56,12 @@
      {% endfor %}
     </div>
 </section>
+
+<section>
+    <div class="container">
+      <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ section.title-es }}{% else %}{{ section.title-en| newline_to_br }}{% endif %}</h2>
+      <div class="row justify-content-center">
+        <div class="mb-4">
+          {% if page.lang == "es" %}{{ section.body-es | newline_to_br | markdownify }}{% else %}{{ section.body-en | markdownify }}{% endif %}
+        </div>
+  </section>
