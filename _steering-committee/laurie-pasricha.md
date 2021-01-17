@@ -26,4 +26,5 @@ body-es: Laurie nació y creció en el valle central de California donde comenz�
   Fort Collins hace 9 años. De momento, pasa sus días siguiendo a sus dos niñas
   hermosas y energéticas y trabajando con entusiasmo como voluntaria con Fuerza
   Latina.
+ordering: last
 ---
