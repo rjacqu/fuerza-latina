@@ -1,0 +1,19 @@
+<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 {{ section.text_style | default: 'text-center' }}">
+        <h2 class="text-black mt-0 text-center">Subscribe to Our Email Newsletter!</h2>
+        <hr class="divider light my-4">
+        <div class="text-black-50 mb-4 ">
+          <FORM ACTION="https://lists.riseup.net/www" METHOD="POST" target="_blank">
+            <B>Email:</B>
+            <INPUT  NAME="email" SIZE="30">
+            <INPUT TYPE="hidden" NAME="list" VALUE="fuerza-latina">
+            <INPUT TYPE="hidden" NAME="action" VALUE="subrequest">
+            <INPUT TYPE="submit" NAME="action_subrequest" VALUE="Subscribe">
+          </FORM>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

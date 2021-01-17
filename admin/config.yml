@@ -51,6 +51,7 @@ collections:
       - { label: "Body (English)", name: "body-en", widget: "markdown" }
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }
       - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
+      - { label: "Ordering", name: "ordering", widget: "select", options: ["important", "first", "neutral", "last"],default: ["neutral"] }
   - label: "Resources"
     name: "resources"
     folder: "_resources"
@@ -92,6 +93,8 @@ collections:
       - { label: "Body (English)", name: "body-en", widget: "markdown", required: false }
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }
       - { label: "Body (Spanish)", name: "body-es", widget: "markdown", required: false }
+      - { label: "Resource Type", name: "resource-type", widget: "select", options: ["Fuerza Resource", "Community Resource"], default: ["Fuerza Resource"] }
+      - { label: "Ordering", name: "ordering", widget: "select", options: ["important", "first", "neutral", "last"],default: ["neutral"] }
   - label: "Events"
     name: "events"
     folder: "_events"
@@ -129,6 +132,7 @@ collections:
       - { label: "Body (English)", name: "body-en", widget: "markdown" }
       - { label: "Title (Spanish)", name: "title-es", widget: "string" }
       - { label: "Body (Spanish)", name: "body-es", widget: "markdown" }
+      - { label: "Ordering", name: "ordering", widget: "select", options: ["important", "first", "neutral", "last"],default: ["neutral"] }
   - label: "Staff Members"
     name: "staff"
     folder: "_staff"
@@ -149,6 +153,7 @@ collections:
       - { label: "Title", name: "job-title", widget: "string", default: "", }
       - { label: "About You (English)", name: "body-en", widget: "markdown" }
       - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }
+      - { label: "Ordering", name: "ordering", widget: "select", options: ["important", "first", "neutral", "last"],default: ["neutral"] }
   - label: "Steering Committee"
     name: "steering-committee"
     folder: "_steering-committee"
@@ -168,3 +173,4 @@ collections:
       - { label: "Name", name: "name", widget: "string", default: "", }
       - { label: "About You (English)", name: "body-en", widget: "markdown" }
       - { label: "About You (Spanish)", name: "body-es", widget: "markdown" }
+      - { label: "Ordering", name: "ordering", widget: "select", options: ["important", "first", "neutral", "last"],default: ["neutral"] }

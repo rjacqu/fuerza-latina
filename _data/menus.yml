@@ -18,12 +18,12 @@ header:
 - title: Get Involved
   title-es: Involucrarse
   url: get-involved
-- title: Programs
-  title-es: Programas
-  url: programs
 - title: Events
   title-es: Eventos
   url: events 
 - title: Resources
   title-es: Recursos
   url: resources
+- title: Programs
+  title-es: Programas
+  url: programs

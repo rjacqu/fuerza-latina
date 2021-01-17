@@ -40,8 +40,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Lucida Grande";
-  --font-family-monospace: "Lucida Grande";
+  --font-family-sans-serif:  sans-serif;
+  --font-family-monospace: "Montserrat";
 }
 
 *,
@@ -51,7 +51,7 @@
 }
 
 html {
-  font-family: "Lucida Grande";
+  font-family: "Montserrat", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -66,7 +66,7 @@ section{
 
 body {
   margin: 0;
-  font-family: "Lucida Grande";
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -187,7 +187,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-size: 1em;
 }
 
@@ -247,7 +247,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-size: inherit;
   line-height: inherit;
 }
@@ -368,7 +368,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -5571,7 +5571,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5673,7 +5673,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9633,7 +9633,7 @@ button.bg-dark:focus {
   }
 }
 .text-monospace {
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
 }
 
 .text-justify {
@@ -9978,7 +9978,7 @@ hr.light {
 }
 
 .btn {
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
 }
 
 .btn-xl {
@@ -10000,14 +10000,14 @@ hr.light {
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-weight: 700;
   color: black;
   font-weight: bold;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
@@ -10113,7 +10113,7 @@ header.masthead h1 {
   text-align: center;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Lucida Grande";
+  font-family:  "Montserrat", sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
