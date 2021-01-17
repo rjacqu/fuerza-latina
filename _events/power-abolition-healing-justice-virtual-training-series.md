@@ -58,4 +58,5 @@ body-es: >-
 
 
   Sabemos que no queremos este mundo que nos duele, pero ¿qué estructuras estamos construyendo para nuestros nuevos mundos? Inspirada por los zapatistas, esta sesión explora cómo podríamos construir un mundo donde quepan muchos mundos diferentes. ¿Qué semillas podemos sembrar hoy para nuestros mundos nuevos? ¿Por mundos centrados en el cuidado y la dignidad de todos nosotros?
+ordering: neutral
 ---
