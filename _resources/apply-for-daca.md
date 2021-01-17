@@ -28,4 +28,6 @@ body-es: >-
 
 
   \*\*Thank you to the Law Office of Kimberly Medina for making these resources accessible to all
+resource-type: Community Resource
+ordering: neutral
 ---
