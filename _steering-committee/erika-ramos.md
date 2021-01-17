@@ -24,4 +24,5 @@ body-es: Erika Ramos es nativa de Jalisco, México. Ella tiene 3 niños; una ni�
   unos 9 meses y en su tiempo libre disfruta pasear consus hijos y conocer
   partes de Colorado que tiene lugares hermosos. Al igual que ayuda en su
   iglesia y la comunidad donde vive de la manera que pueda.
+ordering: neutral
 ---
