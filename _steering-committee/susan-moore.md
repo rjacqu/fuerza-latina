@@ -31,4 +31,5 @@ body-es: >-
   justicia social en este país.\
 
    Para alimentarse y contentarse Susan tiene el compañerismo de su pareja Jon y su hija Raisa, su jardín, su lectura, la costura de alcochados, así como amigos viejos y amigos nuevos que encuentra en la lucha contra la amenaza afrontamos.
+ordering: last
 ---
