@@ -1,41 +1,90 @@
-<section>
-  <div class="container">
-      {% for resource in site.resources %}
+    <h1 class="mt-0" id="community-resource-header">Important Community Resources</h1>
+    {% assign community_resource=0 %}
+     {% for resource in site.resources limit:5%}
+      {% if resource.resource-type == "Community Resource" %}
+      {% capture community_resource %}{% increment community_resource %}{% endcapture %}
+    <div class="row-fluid event-box">
       <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ resource.title-es | newline_to_br }}{% else %}{{ resource.title-en | newline_to_br }}{% endif %}</h2>
 
       <br>
       <div class="row-fluid member-box">
-      	{% if resource.picture %}
+        {% if resource.picture %}
         <div class="col-md-auto">
           <img class="fa fa-3x" src="{{ resource.picture }}">
         </div>
-       	{% endif %}
+        {% endif %}
         {% if page.lang == "es" %}
           {% if resource.files-es %}
           {% for file in resource.files-es %}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
           {% endif %}
         {% else %}
           {% if resource.files-en %}
           {% for file in resource.files-en %}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
-          {% endif %}   
+          {% endif %}  
         {% endif %}
         {% if resource.files-etc %}
           {% for file in resource.files-etc %}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/"}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
         {% endif %}
         <div class="col-md-auto">
           <div class="card-body">
-            <p class="card-text"> {% if page.lang == "es" %}{% if resource.body-es %}{{ resource.body-es | newline_to_br | markdownify }}{% endif %}{% else %}{% if resource.body-en %}{{ resource.body-en | newline_to_br | markdownify }}{% endif %}{% endif %}</p>
+            <p class="center-me card-text"><center>{% if page.lang == "es" %}{% if resource.body-es %}{{ resource.body-es | newline_to_br | markdownify }}{% endif %}{% else %}{% if resource.body-en %}{{ resource.body-en | newline_to_br | markdownify }}{% endif %}{% endif %}</center></p>
           </div>
         </div>
       </div>
-      <br><br>
-      {% endfor %}
     </div>
-  </div>
-</section>
+    {% endif %}
+     {% endfor %}
+     {% if community_resource == 0 %}
+      <script>document.getElementById("community-resource-header").remove();</script>
+      {% endif %}
+     <h1 class="mt-0" id="fuerza-resource-header">Important Fuerza Latina Resources</h1>
+    {% assign fuerza_resource=0 %}
+     {% for resource in site.resources limit:5%}
+      {% if resource.resource-type == "Fuerza Resource" %}
+      {% capture fuerza_resource %}{% increment fuerza_resource %}{% endcapture %}
+    <div class="row-fluid event-box">
+      <h2 class="text-center mt-0">{% if page.lang == "es" %}{{ resource.title-es | newline_to_br }}{% else %}{{ resource.title-en | newline_to_br }}{% endif %}</h2>
+
+      <br>
+      <div class="row-fluid member-box">
+        {% if resource.picture %}
+        <div class="col-md-auto">
+          <img class="fa fa-3x" src="{{ resource.picture }}">
+        </div>
+        {% endif %}
+        {% if page.lang == "es" %}
+          {% if resource.files-es %}
+          {% for file in resource.files-es %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
+          {% endfor %}
+          {% endif %}
+        {% else %}
+          {% if resource.files-en %}
+          {% for file in resource.files-en %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
+          {% endfor %}
+          {% endif %}  
+        {% endif %}
+        {% if resource.files-etc %}
+          {% for file in resource.files-etc %}
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
+          {% endfor %}
+        {% endif %}
+        <div class="col-md-auto">
+          <div class="card-body">
+            <p class="center-me card-text"><center>{% if page.lang == "es" %}{% if resource.body-es %}{{ resource.body-es | newline_to_br | markdownify }}{% endif %}{% else %}{% if resource.body-en %}{{ resource.body-en | newline_to_br | markdownify }}{% endif %}{% endif %}</center></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+     {% endfor %}
+     {% if community_resource == 0 %}
+      <script>document.getElementById("fuerza-resource-header").remove();</script>
+      {% endif %}

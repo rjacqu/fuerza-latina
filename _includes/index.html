@@ -18,20 +18,19 @@
         {% if page.lang == "es" %}
           {% if resource.files-es %}
           {% for file in resource.files-es %}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" | remove: file.extname}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
           {% endif %}
         {% else %}
           {% if resource.files-en %}
           {% for file in resource.files-en %}
-          {{file| inspect}}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" | remove: file.extname}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
           {% endif %}  
         {% endif %}
         {% if resource.files-etc %}
           {% for file in resource.files-etc %}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" | remove: file.extname}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
         {% endif %}
         <div class="col-md-auto">
@@ -64,20 +63,19 @@
         {% if page.lang == "es" %}
           {% if resource.files-es %}
           {% for file in resource.files-es %}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" | remove: file.extname}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
           {% endif %}
         {% else %}
           {% if resource.files-en %}
           {% for file in resource.files-en %}
-          {{file| inspect}}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" | remove: file.extname}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
           {% endif %}  
         {% endif %}
         {% if resource.files-etc %}
           {% for file in resource.files-etc %}
-            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" | remove: file.extname}}</a>
+            <a class=center-me href="{{ file }}">{{ file | remove: "/media/" }}</a>
           {% endfor %}
         {% endif %}
         <div class="col-md-auto">
