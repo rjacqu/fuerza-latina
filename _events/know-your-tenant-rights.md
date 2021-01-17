@@ -27,4 +27,5 @@ body-es: >-
 
 
   Únete a nosotros el proximo miercoles de 6 a 7:30. <https://us02web.zoom.us/j/85875254779>  Habrá interpretación simúltanea. Más detalles en la descripción del evento.
+ordering: neutral
 ---
