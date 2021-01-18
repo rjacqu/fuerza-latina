@@ -1,7 +1,7 @@
 ---
 files-en: /media/daca-list-2020.pdf
 files-es: /media/daca-list-2020-spanish.pdf
-files-etc: /media/daca-clinic-2.jpg
+files-etc: /media/DACA Legal Clinic.jpg
 title-en: Apply for DACA!
 body-en: >-
   ACA Application Clinic - New Applicants 2021 (Facebook
