@@ -1,17 +1,17 @@
 ---
-files-en: /media/daca-list-2020.pdf
-files-es: /media/daca-list-2020-spanish.pdf
-files-etc: /media/DACA Legal Clinic.jpg
+files-en: null
+files-es: null
+files-etc: ""
 title-en: Apply for DACA!
 body-en: >-
   ACA Application Clinic - New Applicants 2021 (Facebook
   Live):  [http://bit.ly/DACA-​Clinic](http://bit.ly/DACA-Clinic)
 
 
-  DACA Requirements + Checklists: attached as 2 PDFs
+  DACA Requirements + Checklists: [here](https://fuerzalatinafoco.org/media/daca-list-2020.pdf)
 
 
-  Next DACA Clinic - Q&A with Lawyers (please register in advance): attached too!
+  ![](/media/DACA Legal Clinic.jpg "Next DACA Clinic - Q&A with Lawyers (please register in advance):")
 
 
   \*\*Thank you to the Law Office of Kimberly Medina for making these resources accessible to all
@@ -21,10 +21,10 @@ body-es: >-
   Live):  [http://bit.ly/DACA-​Clinic](http://bit.ly/DACA-Clinic)
 
 
-  DACA Requirements + Checklists: attached as 2 PDFs
+  DACA Requirements + Checklists: [here](https://fuerzalatinafoco.org/media/daca-list-2020-spanish.pdf)
 
 
-  Next DACA Clinic - Q&A with Lawyers (please register in advance): attached too!
+  ![](/media/DACA Legal Clinic.jpg "Next DACA Clinic - Q&A with Lawyers (please register in advance):")
 
 
   \*\*Thank you to the Law Office of Kimberly Medina for making these resources accessible to all
