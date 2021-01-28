@@ -4,10 +4,8 @@ files-es: null
 files-etc: ""
 title-en: Apply for DACA!
 body-en: >-
-  <!--StartFragment-->
-
-
-  Watch this video with Lawyer Kim Medina on how to fill out your forms:  [http://bit.ly/DACA-​​Clinic](http://bit.ly/DACA-Clinic)*\
+  Watch this video with Lawyer Kim Medina on how to fill out your
+  forms:  [http://bit.ly/DACA-​​Clinic](http://bit.ly/DACA-Clinic)*\
 
   **All the forms you need are in the comments section of the video*
 
@@ -26,7 +24,7 @@ body-es: >-
   **Se encuentra todos los formularios necesarios en los comentarios del video*
 
 
-  Ver un listado de requisitos para calificar para DACA y solicitar DACA: [aquí](https://fuerzalatinafoco.org/media/daca-list-2020-spanish.pdf)
+  Ver un listado de requisitos para calificar para DACA y solicitar DACA: [aqu](https://fuerzalatinafoco.org/media/daca-list-2020-spanish.pdf)
 
 
   El próximo taller sobre DACA se llevará a cabo el sábado 30 de enero a las 10 de la mañana (un taller con tiempo para preguntas y respuestas con la abogada): [http://bit.ly/DACA-​Clinic2](http://bit.ly/DACA-Clinic2)\*\*\
