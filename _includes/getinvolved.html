@@ -2,6 +2,17 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 {{ section.text_style | default: 'text-center' }}">
+        {% if page.lang == "es" %}<h2 class="text-black mt-0 text-center">Involucrarse!</h2><a href="https://docs.google.com/forms/d/e/1FAIpQLScSL1IZZJnZix0hYExfA0Rm_taNpw6OR4w0KIwjk3asiU0Y2Q/viewform">Se Voluntario de Fuerza Latina!</a>{% else %}<h2 class="text-black mt-0 text-center">Get Involved!</h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSddYKmPGU5Kz_ZVX5AmtSFz-lEPpdfIqUSUhcx-n4EF-0rWSw/viewform">Volunteer with Fuerza Latina!</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 {{ section.text_style | default: 'text-center' }}">
         <h2 class="text-black mt-0 text-center">Contact Us!</h2>
         <hr class="divider light my-4">
         <div class="text-black-50 mb-4 ">
